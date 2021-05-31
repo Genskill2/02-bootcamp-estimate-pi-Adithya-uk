@@ -6,9 +6,12 @@ def wallis(i) :
   
         #x = int(input())
         p=0.0
-        for x in range(1,i+1) :
-            p+=(4*i*i)/((4*i*i)-1)
-            x + 1
+        for x in range(i) :
+            l = (2.0 * i)/(2 * i - 1)
+            r = (2.0 * i)/(2 * i + 1)
+            total = l*r
+            p = p + total
+            
         return p
 def monte_carlo(n) :
  
