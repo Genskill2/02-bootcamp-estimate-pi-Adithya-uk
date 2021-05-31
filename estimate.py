@@ -10,9 +10,20 @@ import random
         return p
  def monte_carlo(n) :
     #a = int(input())
+    poc = 0
+    pos = 0
     for i in range(0,n) :
         x = random.random()
         y = random.random()
+        d = x*x + y*y
+        if d<=1 :
+          poc +=1
+        pos +=1
+        i +=1
+      pi = 4 * (poc/pos)
+      return pi
+     
+        
         
         
     
