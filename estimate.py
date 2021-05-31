@@ -29,7 +29,7 @@ class TestMC(unittest.TestCase):
     def wallis :
         x = int(input())
         p=2
-        for in range(0,x) :
+        for in range(1,x+1) :
             p*=(4*i*i)/((4*n*n)-1)
         return p
             
