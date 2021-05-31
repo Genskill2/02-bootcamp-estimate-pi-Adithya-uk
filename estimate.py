@@ -7,7 +7,7 @@ def wallis(i) :
         #x = int(input())
         p=2
         for x in range(1,i+1) :
-            p*=(4*i*i)/((4*n*n)-1)
+            p*=(4*i*i)/((4*i*i)-1)
         return p
 def monte_carlo(n) :
  
