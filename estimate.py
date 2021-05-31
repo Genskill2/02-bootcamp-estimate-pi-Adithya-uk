@@ -5,9 +5,9 @@ import random
 def wallis(i) :
   
         #x = int(input())
-        p=2
+        p=0.0
         for x in range(1,i+1) :
-            p*=(4*i*i)/((4*i*i)-1)
+            p+=(4*i*i)/((4*i*i)-1)
             x + 1
         return p
 def monte_carlo(n) :
