@@ -7,10 +7,10 @@ def wallis(i) :
         #x = int(input())
         p=2.0
         for x in range(i) :
-            l = (2.0 * i)/(2 * i - 1)
-            r = (2.0 * i)/(2 * i + 1)
-            total = l*r
-            p = p * total
+            l = (2.0 * i)/(2.0 * i - 1.0)
+            r = (2.0 * i)/(2.0 * i + 1.0)
+            p = p*l*r
+            
             
         return p
 def monte_carlo(n) :
