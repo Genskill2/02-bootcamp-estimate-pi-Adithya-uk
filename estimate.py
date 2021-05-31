@@ -2,15 +2,28 @@ import math
 import unittest
 import random
 
-def wallis(i) :
+#def wallis(i) :
   
         #x = int(input())
-        p=2.0
-        for x in range(1,i+1) :
+        #p=2.0
+        #for x in range(1,i+1) :
             #l = (2.0 * i)/(2.0 * i - 1.0)
             #r = (2.0 * i)/(2.0 * i + 1.0)
-            t = (4.0*i*i)/((4.0*i*i)-1.0)
-            p = p*t
+            #t = (4.0*i*i)/((4.0*i*i)-1.0)
+            #p = p*t
+def wallis(n):
+        pi = 0.0   
+        for i in range(1, n):
+            x = 4 * (i ** 2)
+            y = x - 1
+            z = float(x) / float(y)
+            if (i == 1):
+                pi = z
+            else:
+                pi *= z
+        pi *= 2
+        return pi
+
             
             
         return p
