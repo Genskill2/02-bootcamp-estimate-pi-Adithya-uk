@@ -6,7 +6,7 @@ def wallis(i) :
   
         #x = int(input())
         p=2.0
-        for x in range(i) :
+        for x in range(1,i) :
             l = (2.0 * i)/(2.0 * i - 1.0)
             r = (2.0 * i)/(2.0 * i + 1.0)
             p = p*l*r
