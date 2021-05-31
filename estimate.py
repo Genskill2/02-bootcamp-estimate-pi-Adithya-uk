@@ -7,9 +7,10 @@ def wallis(i) :
         #x = int(input())
         p=2.0
         for x in range(1,i+1) :
-            l = (2.0 * i)/(2.0 * i - 1.0)
-            r = (2.0 * i)/(2.0 * i + 1.0)
-            p = p*l*r
+            #l = (2.0 * i)/(2.0 * i - 1.0)
+            #r = (2.0 * i)/(2.0 * i + 1.0)
+            t = (4*n*n)/((4*n*n)-1)
+            p = p*t
             
             
         return p
